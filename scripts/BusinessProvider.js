@@ -1,3 +1,5 @@
+// import { NYBusinessList } from "./BusinessList";
+
 const businesses = [
     {
       purchasingAgent: { nameLast: "Kirlin", nameFirst: "Kristy" },
@@ -114,3 +116,13 @@ const businesses = [
   export const useBusinessList = () => {
       return businesses.slice();
   }
+// START OF EXPORTING FILTERE NY BUSINESSES 
+
+export const newYorkBusinesses = businesses.filter(businessObject => {
+    if (businessObject.addressStateCode = "NY") {
+        return true
+    }
+    return false
+})
+
+console.log(newYorkBusinesses);

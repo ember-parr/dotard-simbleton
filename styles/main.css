@@ -34,9 +34,11 @@ h4, h5, h6 {
 }
 
 #headerLogo {
-				width: 50px;
+	width: 50px;
     vertical-align: middle;
-    margin-right: 10px;
+	margin-right: 10px;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 .header-text {
@@ -77,13 +79,19 @@ blockquote {
 }
 
 footer p {
-	font-family: "Amatic SC", cursive;
+	font-family: "Lato", sans-serif;
 	font-weight: 100;
 	opacity: 50%;
+	text-align: center;
 }
 
 address {
 	color: black;
 	font-family: "Oswald", sans-serif;
 	text-align: center;
+}
+
+.businessList--newYork h1 {
+	color: red;
+	margin-top: 3.5em;
 }
