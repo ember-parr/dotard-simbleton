@@ -90,3 +90,8 @@ address {
 	font-family: "Oswald", sans-serif;
 	text-align: center;
 }
+
+.businessList--newYork h1 {
+	color: red;
+	margin-top: 3.5em;
+}
