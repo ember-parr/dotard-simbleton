@@ -4,6 +4,9 @@ import { Business } from './Business.js';
 import { newYorkBusinesses } from './BusinessProvider.js';
 import { nyBusiness } from './Business.js';
 
+import { purchasingAgents } from './BusinessProvider.js';
+import { Agents } from './Business.js';
+
 
 
 // runs through the loop of all businesses
@@ -11,7 +14,7 @@ const contentSelector = document.querySelector(".businessList");
 
 export const BusinessList = () => {
     const businessArray = useBusinessList()
-    contentSelector.innerHTML = "<h1>All Sales</h1>"
+    contentSelector.innerHTML = ""
 
     businessArray.forEach(
         (businessObj) => {
@@ -26,11 +29,26 @@ const contentSelectorTwo = document.querySelector(".businessList--newYork");
 
 export const nyBusinessList = () => {
     const businessArray = newYorkBusinesses
-    contentSelectorTwo.innerHTML = "<h1>Only New York Sales</h1>"
+    contentSelectorTwo.innerHTML = ""
 
     businessArray.forEach(
         (businessObj) => {
             contentSelectorTwo.innerHTML += nyBusiness(businessObj)
+        }
+    );
+}
+
+
+// runs through the loop of all purchasing Agents
+const contentSelectorThree = document.querySelector(".agentsList");
+
+export const agentsList = () => {
+    const agentsArray = purchasingAgents
+    contentSelectorThree.innerHTML = ""
+
+    agentsArray.forEach(
+        (agentsObj) => {
+            contentSelectorThree.innerHTML += Agents(agentsObj)
         }
     );
 }

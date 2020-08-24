@@ -23,4 +23,13 @@ export const nyBusiness = (nyBusinessObject) => {
 }
 
 
-
+export const Agents = (agentsObject) => {
+    return `
+        <h2 class="agent-name">${agentsObject.agentName.nameFirst} ${agentsObject.agentName.nameLast}</h2>
+        <div class="agent-info">
+            ${agentsObject.agentCompany} <br>
+            ${agentsObject.agentPhone}
+            <hr>
+        </div>
+    `
+}
