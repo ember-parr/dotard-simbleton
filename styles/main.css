@@ -33,9 +33,14 @@ h4, h5, h6 {
     font-weight: 300;
 }
 
+header {
+	display: flex;
+	justify-content: center;
+}
+
 #headerLogo {
 	width: 50px;
-    vertical-align: middle;
+	vertical-align: middle;
 	margin-right: 10px;
 	margin-top: 0;
 	padding-top: 0;
@@ -89,9 +94,4 @@ address {
 	color: black;
 	font-family: "Oswald", sans-serif;
 	text-align: center;
-}
-
-.businessList--newYork h1 {
-	color: red;
-	margin-top: 3.5em;
 }

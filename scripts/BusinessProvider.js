@@ -126,3 +126,16 @@ export const newYorkBusinesses = businesses.filter(businessObject => {
 })
 
 console.log(newYorkBusinesses);
+
+
+
+export const purchasingAgents = businesses.map(businessObj => {
+  return {
+    agentName: businessObj.purchasingAgent, 
+    agentCompany: businessObj.companyName, 
+    agentPhone:businessObj.phoneWork
+  }
+});
+
+console.log("Purchasing Agents Output: ")
+console.log(purchasingAgents);
