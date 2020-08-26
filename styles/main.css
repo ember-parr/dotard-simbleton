@@ -95,3 +95,20 @@ address {
 	font-family: "Oswald", sans-serif;
 	text-align: center;
 }
+
+
+input {
+	font-family: inherit;
+	height: 1.75em;
+	width: 30%;
+}
+
+.search-bar {
+	text-align: center;
+	background-color: lightgray;
+	padding: 2em;
+}
+
+input:focus {
+	border: 1px solid blue;
+}

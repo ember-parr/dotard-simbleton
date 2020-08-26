@@ -13,26 +13,73 @@
         <header>
             <div id="headerLogo"><img src="images/dotard-logo.png" alt="headerLogo goes here "></div>
             <!-- <div class="header-text">Businesses Sold To...</div> -->
-
+ 
             
 
 		</header>
 
 
         <main>
+            <section class="search-bar">
+                <input type="text" id="myInput" placeholder="Search for companies..">
+            </section>
+            <div class="results">
+                <!--company search results show here.... hopefully-->
+            </div>
 
             <div class="accordion" id="accordionExample">
+               
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          New York Businesses Filtered:
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                          
+                          <article class="businessList--newYork">
+                              <!-- New York businesses go here --->
+                          </article>
+  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Purchasing Agents Contact Info:
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                      
+                          <div class="agentsList">
+                              <!-- agents go here-->
+                          </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
                 <div class="card">
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <button class="btn btn-link btn-block text-left collapse show" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         All Businesses That Have Purchased:
                         
                       </button>
                     </h2>
                   </div>
               
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
 
                         <div class="businessList">
@@ -42,42 +89,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        New York Businesses Filtered:
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        
-                        <article class="businessList--newYork">
-                            <!-- New York businesses go here --->
-                        </article>
 
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Purchasing Agents Contact Info:
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                    
-                        <div class="agentsList">
-                            <!-- agents go here-->
-                        </div>
-                    
-                    </div>
-                  </div>
-                </div>
+
+
+
+                
               </div>
 
 
